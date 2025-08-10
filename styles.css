@@ -26,7 +26,6 @@ body{
   margin-bottom: 20px;
   flex-wrap: nowrap;
 }
-
 .search input{
   border: 0;
   outline:0;
@@ -135,7 +134,6 @@ body{
     left: 10px;
     z-index: 999;
   }
-
   .theme-toggle button {
     font-size: 20px;
     background: transparent;
@@ -143,7 +141,6 @@ body{
     cursor: pointer;
     margin-right: 5px;
   }
-
   .forecast {
     display: flex;
     overflow-x: auto;
@@ -172,6 +169,11 @@ body{
     z-index: 10; 
     font-size: 24px;
   }
+  .weather img{
+    width: 50px;
+    height: 50px;
+  }
+
   @media (max-width: 600px) {
     .search {
       flex-direction: column;
@@ -191,17 +193,14 @@ body{
       border-radius: 10px;
       margin-bottom: 10px;
     }
-
     .or-text {
       text-align: center;
       margin: 5px 0;
     }
-
     .location-btn {
       width: 100%;
       border-radius: 10px;
     }
-
     .card {
       max-width: 95%;
       padding: 20px;
