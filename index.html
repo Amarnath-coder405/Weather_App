@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather App</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css"/>
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="wa-container">
-      <h2>Weather App</h2>
-      <p>From sunrise to storm—stay ahead.</p>
+  <button id="modeToggleBtn">
+  🌙
+  </button>
+  <h1 class="heading">
+    ☁️ WeatherCast Live 🌦️
+  </h1>
+  <div class="card">
+    <!-- Search Bar -->
+    <div class="search">
+      <input type="text" placeholder="Enter City Name" spellcheck="false" />
+      
+      <button type="button" class="search-btn">
+        <img class="search_image" src="images/searchicon.gif" alt="Search Icon" />
+      </button>
+      <span class="or-text">(or)</span>
+      <button class="location-btn" id="locationBtn">Use My Location</button>
     </div>
-  </header>
-  <main>
-    <div class="wa-form">
-      <form class="form group" action="#" method="post">
-        <h2>Check weather by city</h2>
-        <label for="city">Enter City:</label>
-        <input type="search" id="wa-city" name="wa-city" placeholder="Please enter city name" required></input>
-        <button type="submit">Submit</button>
-      </form>
+    <!-- Location Button -->
+    <div class="error">
+      <p>Invalid city name</p>
     </div>
-  </main>
+    <!-- Weather Info -->
+    <div class="weather">
+      <img src="weather.jpg" class="weather-icon" alt="Weather Icon" />
+      <h1 class="temp">22°C</h1>
+      <h2 class="city">New York</h2>
+      
+      <!-- Unit Toggle -->
+      <div class="unit-toggle">
+        <button class="celsius-btn active">°C</button>
+        <button class="fahrenheit-btn">°F</button>
+      </div>
+      
+      <!-- Weather Details -->
+      <div class="details">
+        <div class="col">
+          <img src="weather.jpg" alt="Humidity Icon" />
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="weather.jpg" alt="Wind Icon" />
+          <div>
+            <p class="wind">50 km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 5-Day Forecast -->
+      <div class="forecast-container">
+        <h3>5-Day Forecast</h3>
+        <div class="forecast" id="forecast"></div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
