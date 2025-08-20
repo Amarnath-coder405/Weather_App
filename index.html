@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <button id="modeToggleBtn">
+  🌙
+  </button>
+  <h1 class="heading">
+    ☁️ WeatherCast Live 🌦️
+  </h1>
+  <div class="card">
+    <!-- Search Bar -->
+    <div class="search">
+      <input type="text" placeholder="Enter City Name" spellcheck="false" />
+      
+      <button type="button" class="search-btn" id="searchBtn">
+        <img class="search_image" src="images/searchbtn.png" alt="Search Icon" />
+      </button>
+      <span class="or-text">(or)</span>
+      <button class="location-btn" id="locationBtn">Use My Location</button>
+    </div>
+    <!-- Location Button -->
+    <div class="error">
+      <p>Invalid city name</p>
+    </div>
+    <!-- Weather Info -->
+    <div class="weather">
+      <img src= https://www.flaticon.com/free-icons/weather title="weather icons">Weather icons created by iconixar - Flaticon</a>" class="weather-icon" alt="Weather Icon" />
+      <h1 class="temp">22°C</h1>
+      <h2 class="city">New York</h2>
+      
+      <!-- Unit Toggle -->
+      <div class="unit-toggle">
+        <button class="celsius-btn active">°C</button>
+        <button class="fahrenheit-btn">°F</button>
+      </div>
+      
+      <!-- Weather Details -->
+      <div class="details">
+        <div class="col">
+          <img src="images/humidityicon.png" alt="Humidity Icon" />
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="images/windicon.gif" alt="Wind Icon" />
+          <div>
+            <p class="wind">50 km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 5-Day Forecast -->
+      <div class="forecast-container">
+        <h3>5-Day Forecast</h3>
+        <div class="forecast" id="forecast"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

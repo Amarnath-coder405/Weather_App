@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(images/background.jpg);
+  background-size: cover;
+}
+.card {
+  width: 95%;
+  max-width: 750px;
+  background: transparent;
+  padding: 40px 35px;
+  text-align:center;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  color: #fff;
+} 
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
+}
+.search input{
+  border: 0;
+  outline:0;
+  background-color:#ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 18px;
+  width: 280px;
+  flex-shrink: 0;
+}
+.search-btn {
+  border: 0;
+  outline:0;
+  background-color:#ebfffc;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.search-btn img{
+  width: 24px;
+  height: 24px;
+}
+.or-text  {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+.location-btn {
+  border: 0;
+  outline:0;
+  background-color: #ebfffc;
+  color: #555;
+  padding: 10px 20px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.heading{
+  font-family: sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  background: #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.weather-icon {
+  width: 170px;
+  margin-top:30px;
+}
+.weather h1{
+  font-size: 80px;
+  font-weight: 500;
+}
+.weather h2{
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+.weather {
+  display: none;
+}
+.error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+.unit-toggle {
+  margin-top: 20px;
+}
+.unit-toggle button {
+  background: transparent;
+  border: 1px solid #fff;
+  color:#fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.5px;
+}
+.unit-toggle button.active {
+  background: #fff;
+  color: #000;
+}
+.unit-toggle button.active {
+      background: #fff;
+      color: #000;
+    }
+  .theme-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+  }
+  .theme-toggle button {
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .forecast {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    margin-top: 30px;
+    margin-left: 60px;
+    padding-bottom: 10px;
+  }
+  .forecast-day {
+    min-width: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .forecast-day img {
+    width: 50px;
+    height: 50px;
+  }
+  .forecast-container{
+    margin-top: 30px;
+  }
+  #modeToggleBtn{
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    z-index: 10; 
+    font-size: 24px;
+  }
+  .weather img{
+    width: 50px;
+    height: 50px;
+  }
+
+  @media (max-width: 600px) {
+    .search {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .search input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .forecast {
+      margin-left: 0;
+      justify-content: center;
+    }
+    .search-btn {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .or-text {
+      text-align: center;
+      margin: 5px 0;
+    }
+    .location-btn {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card {
+      max-width: 95%;
+      padding: 20px;
+    }
+  }
